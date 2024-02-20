@@ -102,7 +102,7 @@ axes.formatter.use_locale: True  # Use locale for formatting tick labels with co
 
 
 ### GRIDS  
-grid.color     : #F5F5F5
+grid.color     : whitesmoke
 
 
 
