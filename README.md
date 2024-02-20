@@ -2,14 +2,13 @@
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python Version](https://img.shields.io/pypi/pyversions/sneeifstyles.svg)](https://pypi.org/project/sneeifstyles/)
-[![PyPI version](https://badge.fury.io/py/sneeifstyles.svg)](https://pypi.org/project/sneeifstyles/)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-black.svg)](https://github.com/ambv/black)
 
 QB Styles is a python package with a light and a dark [`matplotlib`](https://github.com/matplotlib/matplotlib) style.
 
 Dark style | Light style
 |-----------|----------- |
-| ![Line plot](https://github.com/quantumblacklabs/sneeifstyles/raw/master/examples/line.png?raw=true "Line plot") | ![Distribution plot](https://github.com/quantumblacklabs/sneeifstyles/raw/master/examples/distribution_light.png?raw=true "Distribution plot") |
+| ![Line plot](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/line.png "Line plot") | ![Distribution plot](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/distribution_light.png "Distribution plot") |
 
 ## How do I install QB Styles?
 
@@ -17,7 +16,7 @@ Dark style | Light style
 
 
 ```bash
-pip install sneeifstyles
+pip install git+https://github.com/SNEE-ICS/sneeifstyles.git
 ```
 
 ## How do I use QB Styles?
@@ -40,14 +39,10 @@ mpl_style(dark=False)
 
 ### How do I use QB Styles in Jupyter Notebooks?
 
-> ⚠️ Please make sure you run `from sneeifstyles import mpl_style` and `mpl_style()` in **different cells** as shown below. See [this issue](https://github.com/jupyter/notebook/issues/3691) for more details.
+> ⚠️ Please make sure you run `from sneeifstyles import mpl_style` and `mpl_style()` in **code cells** as shown below. 
 
 ```python
-# first cell
 from sneeifstyles import mpl_style
-```
-```python
-# second cell
 mpl_style()
 ```
 
@@ -85,27 +80,14 @@ def plot(dark):
 plot(dark=True)
 ```
 
-![png](https://github.com/quantumblacklabs/sneeifstyles/raw/master/examples/output_6_0.png?raw=true)
+![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/output_6_0.png)
 
 ```python
 plot(dark=False)
 ```
 
-![png](https://github.com/quantumblacklabs/sneeifstyles/raw/master/examples/output_7_0.png?raw=true)
+![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/output_7_0.png)
 
-## How do I create my own styles? 
-
-Have a look at the files [qb-common.mplstyle](https://github.com/quantumblacklabs/sneeifstyles/blob/master/sneeifstyles/styles/qb-common.mplstyle), [qb-dark.mplstyle](https://github.com/quantumblacklabs/sneeifstyles/blob/master/sneeifstyles/styles/qb-dark.mplstyle) and [qb-light.mplstyle](https://github.com/quantumblacklabs/sneeifstyles/blob/master/sneeifstyles/styles/qb-light.mplstyle). They contain many elements that you may want to customise.
-
-To do so, create a file similar to the above files at the root of your project, and apply it after the `qbstyle` as follows:
-
-```python
-import matplotlib.pyplot as plt
-from sneeifstyles import mpl_style
-
-mpl_style()
-plt.style.use('./your-style.mplstyle')
-```
 
 All of `matplotlibrc`'s options can be found [here](https://matplotlib.org/tutorials/introductory/customizing.html#a-sample-matplotlibrc-file).
 
