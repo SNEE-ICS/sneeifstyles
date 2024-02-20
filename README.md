@@ -6,8 +6,8 @@
 
 QB Styles is a python package with a light and a dark [`matplotlib`](https://github.com/matplotlib/matplotlib) style.
 
-Dark style | Light style
-|-----------|----------- |
+Line plot style | Distribution plot style
+|---------------|----------------------- |
 | ![Line plot](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/line_plot.png "Line plot") | ![Distribution plot](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/distribution_plot.png "Distribution plot") |
 
 ## How do I install QB Styles?
@@ -21,20 +21,13 @@ pip install git+https://github.com/SNEE-ICS/sneeifstyles.git
 
 ## How do I use QB Styles?
 
-You can use the dark Matplotlib style theme in the following way:
+We are only using the light theme in our SNEE IF styling
+To use the light Matplotlib style theme, you can do the following: 
 
 ```python
 from sneeifstyles import mpl_style
 
-mpl_style(dark=True)
-```
-
-And to use the light Matplotlib style theme, you can do the following: 
-
-```python
-from sneeifstyles import mpl_style
-
-mpl_style(dark=False)
+mpl_style()
 ```
 
 ### How do I use QB Styles in Jupyter Notebooks?
@@ -77,17 +70,12 @@ def plot(dark):
     ax = plt.subplot(2, 2, 4, projection='polar')
     polar_plot(ax)
 
-plot(dark=True)
-```
-
-![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/plot_dark.png)
-
-```python
-plot(dark=False)
+plot()
 ```
 
 ![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/plot_light.png)
 
+```
 
 All of `matplotlibrc`'s options can be found [here](https://matplotlib.org/tutorials/introductory/customizing.html#a-sample-matplotlibrc-file).
 
