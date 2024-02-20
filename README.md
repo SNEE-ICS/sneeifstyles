@@ -8,7 +8,7 @@ QB Styles is a python package with a light and a dark [`matplotlib`](https://git
 
 Dark style | Light style
 |-----------|----------- |
-| ![Line plot](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/line.png "Line plot") | ![Distribution plot](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/distribution_light.png "Distribution plot") |
+| ![Line plot](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/line_plot.png "Line plot") | ![Distribution plot](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/distribution_plot.png "Distribution plot") |
 
 ## How do I install QB Styles?
 
@@ -80,13 +80,13 @@ def plot(dark):
 plot(dark=True)
 ```
 
-![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/output_6_0.png)
+![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/plot_dark.png)
 
 ```python
 plot(dark=False)
 ```
 
-![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/output_7_0.png)
+![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/plot_light.png)
 
 
 All of `matplotlibrc`'s options can be found [here](https://matplotlib.org/tutorials/introductory/customizing.html#a-sample-matplotlibrc-file).
