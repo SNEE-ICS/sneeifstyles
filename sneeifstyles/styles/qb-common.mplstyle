@@ -81,7 +81,7 @@ axes.linewidth       : 1.0     # edge linewidth
 axes.grid            : True   # display grid or not
 axes.grid.which      : major
 axes.grid.axis       : y
-axes.grid.color      : (0.96, 0.96, 0.96)  #whitesmoke color reason of using RGB tuple is to suppress the warning
+axes.grid.color      : (0.96, 0.96, 0.96)  # whitesmoke color reason of using RGB tuple is to suppress the warning
 axes.titlesize       : 12   # fontsize of the axes title
 axes.titlepad        : 15   # vertical offset of the axes title
 axes.labelsize       : 12  # fontsize of the x any y labels
