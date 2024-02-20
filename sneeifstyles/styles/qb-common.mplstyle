@@ -81,7 +81,6 @@ axes.linewidth       : 1.0     # edge linewidth
 axes.grid            : True   # display grid or not
 axes.grid.which      : major
 axes.grid.axis       : y
-axes.grid.color      : (0.96, 0.96, 0.96)
 axes.titlesize       : 12   # fontsize of the axes title
 axes.titlepad        : 15   # vertical offset of the axes title
 axes.labelsize       : 12  # fontsize of the x any y labels
@@ -99,6 +98,12 @@ axes.prop_cycle      : cycler('color', ['075D58', '332655', '6C1254', '00386E', 
 axes.formatter.use_locale: True  # Use locale for formatting tick labels with commas
 #axes.xmargin        : 0  # x margin.  See `axes.Axes.margins`
 #axes.ymargin        : 0  # y margin See `axes.Axes.margins`
+
+
+
+### GRIDS  
+grid.color     : #F5F5F5
+
 
 
 ### TICKS
