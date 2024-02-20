@@ -75,13 +75,13 @@ font.sans-serif     : Arial
 # default fontsizes for ticklabels, and so on.  See
 # http://matplotlib.org/api/axes_api.html#module-matplotlib.axes
 axes.facecolor       : white
-axes.edgecolor       : gray35
+axes.edgecolor       : grey35
 #axes.hold           : True    # whether to clear the axes by default ons
 axes.linewidth       : 1.0     # edge linewidth
 axes.grid            : True   # display grid or not
 axes.grid.which      : major
 axes.grid.axis       : y
-axes.grid.color      : #F3F3F3
+axes.grid.color      : whitesmoke
 axes.titlesize       : 12   # fontsize of the axes title
 axes.titlepad        : 15   # vertical offset of the axes title
 axes.labelsize       : 12  # fontsize of the x any y labels
