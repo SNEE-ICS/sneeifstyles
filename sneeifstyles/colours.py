@@ -1,4 +1,4 @@
-from typing import List, Literal
+from typing import List, Literal, Dict
 
 
 # Function for Sequential palettes 
@@ -79,7 +79,7 @@ CORE_YELLOW_CYCLE = ["#875401", "#B47002", "#E28C03", "#EAAE4E", "#F3D19A"]
 
 COLOUR_SET_NAMES = ["DARK_2_CYCLE", "DARK_1_CYCLE", "PRIMARY_COLOUR_CYCLE", "LIGHT_1_CYCLE", "LIGHT_2_CYCLE"]
 
-COLOURS_BY_CYCLE = {
+COLOURS_BY_CYCLE:Dict[str,List[str]] = {
     COLOUR_SET_NAMES[i]: [values[i] for values in CORE_COLOUR_STYLE.values()]
     for i in range(len(COLOUR_SET_NAMES))
 }
