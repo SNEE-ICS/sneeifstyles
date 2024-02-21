@@ -1,67 +1,70 @@
+from typing import List, Literal
+
+
 # Function for Sequential palettes 
-def get_sequential_palettes(num_colors, color): 
+def get_sequential_palettes(num_colours: int, colour:Literal["green","purple","pink","blue","yellow"])->List[str]: 
     """    
     Args:
-        number of colors (int): The number of colors needed in the palette (Accepted values are from 1 to 5)
-        name (str): Name of the color you want (accepted values = GREEN, PURPLE, PINK, BLUE, YELLOW).
+        number of colours (int): The number of colours needed in the palette (Accepted values are from 1 to 5)
+        name of colour (str): Name of the colour you want (Accepted values are green, purple, pink, blue and yellow).
     
     Returns:
-        list: A list of sequential colors.
+        list: A list of sequential colours.
     """
     seq_palette = []
-    # 1 color: Primary 
-    if num_colors == 1:
-        seq_palette.append(CORE_COLOR_STYLE[color][2])
-    # 2 colors: Primary + Light 2 
-    elif num_colors == 2:
-        seq_palette.append([CORE_COLOR_STYLE[color][2], CORE_COLOR_STYLE[color][4]])
-    # 3 colors: Dark 2 + Primary + Light 2 
-    elif num_colors == 3:
-        seq_palette.append([CORE_COLOR_STYLE[color][0], CORE_COLOR_STYLE[color][2], CORE_COLOR_STYLE[color][4]])
-    # 4 colors: Dark 2 + Primary + Light 1 + Light 2 
-    elif num_colors == 4:
-        seq_palette.append([CORE_COLOR_STYLE[color][0], CORE_COLOR_STYLE[color][2], CORE_COLOR_STYLE[color][3], CORE_COLOR_STYLE[color][4]])
-    # 5 colors: Dark 2 + Dark 1 + Primary + Light 1 + Light 2 
-    elif num_colors == 5:
-        seq_palette.append([CORE_COLOR_STYLE[color][0], CORE_COLOR_STYLE[color][1], CORE_COLOR_STYLE[color][2], CORE_COLOR_STYLE[color][3], CORE_COLOR_STYLE[color][4]])
+    # 1 colour: Primary 
+    if num_colours == 1:
+        seq_palette.append(CORE_COLOUR_STYLE[colour][2])
+    # 2 colours: Primary + Light 2 
+    elif num_colours == 2:
+        seq_palette.append([CORE_COLOUR_STYLE[colour][2], CORE_COLOUR_STYLE[colour][4]])
+    # 3 colours: Dark 2 + Primary + Light 2 
+    elif num_colours == 3:
+        seq_palette.append([CORE_COLOUR_STYLE[colour][0], CORE_COLOUR_STYLE[colour][2], CORE_COLOUR_STYLE[colour][4]])
+    # 4 colours: Dark 2 + Primary + Light 1 + Light 2 
+    elif num_colours == 4:
+        seq_palette.append([CORE_COLOUR_STYLE[colour][0], CORE_COLOUR_STYLE[colour][2], CORE_COLOUR_STYLE[colour][3], CORE_COLOUR_STYLE[colour][4]])
+    # 5 colours: Dark 2 + Dark 1 + Primary + Light 1 + Light 2 
+    elif num_colours == 5:
+        seq_palette.append([CORE_COLOUR_STYLE[colour][0], CORE_COLOUR_STYLE[colour][1], CORE_COLOUR_STYLE[colour][2], CORE_COLOUR_STYLE[colour][3], CORE_COLOUR_STYLE[colour][4]])
         
     return seq_palette
 
 
 # Qualitative palette 
-q_one_color_palette   = ["#0D9C93"]
-q_two_color_palette   = ["#0D9C93", "#55408E"]
-q_three_color_palette = ["#0D9C93", "#55408E", "#B41E8C"]
-q_four_color_palette  = ["#0D9C93", "#55408E", "#B41E8C", "#005EB8"]
-q_five_color_palette  = ["#0D9C93", "#55408E", "#B41E8C", "#005EB8", "#E28C03"]
+Q_ONE_COLOUR_PALETTE   = ["#0D9C93"]
+Q_TWO_COLOUR_PALETTE   = ["#0D9C93", "#55408E"]
+Q_THREE_COLOUR_PALETTE = ["#0D9C93", "#55408E", "#B41E8C"]
+Q_FOUR_COLOUR_PALETTE  = ["#0D9C93", "#55408E", "#B41E8C", "#005EB8"]
+Q_FIVE_COLOUR_PALETTE  = ["#0D9C93", "#55408E", "#B41E8C", "#005EB8", "#E28C03"]
 
 
 # Diverging palettes
-d_one_color_palette   = ["#0D9C93"]
-d_two_color_palette   = ["#0D9C93", "#55408E"]
-d_three_color_palette = ["#0D9C93", "#8879AF", "#55408E"]
-d_four_color_palette  = ["#0D9C93", "#55B9B3", "#8879AF", "#55408E"]
-d_five_color_palette  = ["#0A7C75", "#0D9C93", "#55B9B3", "#8879AF", "#55408E"]
-d_six_color_palette   = ["#0A7C75", "#0D9C93", "#55B9B3", "#8879AF", "#55408E", "#443371"]
-d_seven_color_palette = ["#075D58", "#0A7C75", "#0D9C93", "#55B9B3", "#8879AF", "#55408E", "#443371"]
-d_eight_color_palette = ["#075D58", "#0A7C75", "#0D9C93", "#55B9B3", "#8879AF", "#55408E", "#443371", "#332655"]
-d_nine_color_palette  = ["#075D58", "#0A7C75", "#0D9C93", "#55B9B3", "#9ED7D3", "#8879AF", "#55408E", "#443371", "#332655"]
-d_ten_color_palette   = ["#075D58", "#0A7C75", "#0D9C93", "#55B9B3", "#9ED7D3", "#BBB2D1", "#8879AF", "#55408E", "#443371", "#332655"]
+D_ONE_COLOUR_PALETTE   = ["#0D9C93"]
+D_TWO_COLOUR_PALETTE   = ["#0D9C93", "#55408E"]
+D_THREE_COLOUR_PALETTE = ["#0D9C93", "#8879AF", "#55408E"]
+D_FOUR_COLOUR_PALETTE  = ["#0D9C93", "#55B9B3", "#8879AF", "#55408E"]
+D_FIVE_COLOUR_PALETTE  = ["#0A7C75", "#0D9C93", "#55B9B3", "#8879AF", "#55408E"]
+D_SIX_COLOUR_PALETTE   = ["#0A7C75", "#0D9C93", "#55B9B3", "#8879AF", "#55408E", "#443371"]
+D_SEVEN_COLOUR_PALETTE = ["#075D58", "#0A7C75", "#0D9C93", "#55B9B3", "#8879AF", "#55408E", "#443371"]
+D_EIGHT_COLOUR_PALETTE = ["#075D58", "#0A7C75", "#0D9C93", "#55B9B3", "#8879AF", "#55408E", "#443371", "#332655"]
+D_NINE_COLOUR_PALETTE  = ["#075D58", "#0A7C75", "#0D9C93", "#55B9B3", "#9ED7D3", "#8879AF", "#55408E", "#443371", "#332655"]
+D_TEN_COLOUR_PALETTE   = ["#075D58", "#0A7C75", "#0D9C93", "#55B9B3", "#9ED7D3", "#BBB2D1", "#8879AF", "#55408E", "#443371", "#332655"]
 
 
-TITLE_COLOR =  "#064169"
+TITLE_COLOUR =  "#064169"
 
-TEXT_COLOR = "#231F20"
+TEXT_COLOUR = "#231F20"
 
-TEXT_HIGHLIGHT_COLOR = "#408CC4"
+TEXT_HIGHLIGHT_COLOUR = "#408CC4"
 
-BACKGROUND_COLOR = "#C0CED8"
+BACKGROUND_COLOUR = "#C0CED8"
 
-CORE_COLOR_STYLE = { 'GREEN' : ["#075D58","#0A7C75", "#0D9C93", "#55B9B3", "#9ED7D3"],
-                     'PURPLE': ["#332655","#443371", "#55408E", "#8879AF", "#BBB2D1"],
-                     'PINK'  : ["#6C1254","#901870", "#B41E8C", "#CA61AE", "#E1A5D1"],
-                     'BLUE'  : ["#00386E","#004B93", "#005EB8", "#4C8ECD", "#99BEE2"],
-                     'YELLOW': ["#875401","#B47002", "#E28C03", "#EAAE4E", "#F3D19A"] 
+CORE_COLOUR_STYLE = { 'green' : ["#075D58","#0A7C75", "#0D9C93", "#55B9B3", "#9ED7D3"],
+                     'purple': ["#332655","#443371", "#55408E", "#8879AF", "#BBB2D1"],
+                     'pink'  : ["#6C1254","#901870", "#B41E8C", "#CA61AE", "#E1A5D1"],
+                     'blue'  : ["#00386E","#004B93", "#005EB8", "#4C8ECD", "#99BEE2"],
+                     'yellow': ["#875401","#B47002", "#E28C03", "#EAAE4E", "#F3D19A"] 
                     }
 
 CORE_GREEN_CYCLE = ["#075D58", "#0A7C75", "#0D9C93", "#55B9B3", "#9ED7D3"]
@@ -74,9 +77,9 @@ CORE_BLUE_CYCLE = ["#00386E", "#004B93", "#005EB8", "#4C8ECD", "#99BEE2"]
 
 CORE_YELLOW_CYCLE = ["#875401", "#B47002", "#E28C03", "#EAAE4E", "#F3D19A"]
 
-color_set_names = ["DARK_2_CYCLE", "DARK_1_CYCLE", "PRIMARY_COLOR_CYCLE", "LIGHT_1_CYCLE", "LIGHT_2_CYCLE"]
+COLOUR_SET_NAMES = ["DARK_2_CYCLE", "DARK_1_CYCLE", "PRIMARY_COLOUR_CYCLE", "LIGHT_1_CYCLE", "LIGHT_2_CYCLE"]
 
-colors_by_cycles = {
-    color_set_names[i]: [values[i] for values in CORE_COLOR_STYLE.values()]
-    for i in range(len(color_set_names))
+COLOURS_BY_CYCLE = {
+    COLOUR_SET_NAMES[i]: [values[i] for values in CORE_COLOUR_STYLE.values()]
+    for i in range(len(COLOUR_SET_NAMES))
 }
