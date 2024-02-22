@@ -1,16 +1,16 @@
-# QB Styles
+# SNEE IF Styles
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python Version](https://img.shields.io/pypi/pyversions/sneeifstyles.svg)](https://pypi.org/project/sneeifstyles/)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-black.svg)](https://github.com/ambv/black)
 
-QB Styles is a python package with a light and a dark [`matplotlib`](https://github.com/matplotlib/matplotlib) style.
+SNEE IF Styles is a python package with a light and a dark [`matplotlib`](https://github.com/matplotlib/matplotlib) style.
 
 Line plot style | Distribution plot style
 |---------------|----------------------- |
 | ![Line plot](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/line_plot.png "Line plot") | ![Distribution plot](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/distribution_plot.png "Distribution plot") |
 
-## How do I install QB Styles?
+## How do I install SNEE IF Styles?
 
 `sneeifstyles` is a Python package. To install it, simply run:
 
@@ -19,7 +19,7 @@ Line plot style | Distribution plot style
 pip install git+https://github.com/SNEE-ICS/sneeifstyles.git
 ```
 
-## How do I use QB Styles?
+## How do I use SNEE IF Styles?
 
 We are only using the light theme in our SNEE IF styling
 To use the light Matplotlib style theme, you can do the following: 
@@ -30,7 +30,7 @@ from sneeifstyles import mpl_style
 mpl_style()
 ```
 
-### How do I use QB Styles in Jupyter Notebooks?
+### How do I use SNEE IF Styles in Jupyter Notebooks?
 
 > ⚠️ Please make sure you run `from sneeifstyles import mpl_style` and `mpl_style()` in **code cells** as shown below. 
 
@@ -39,7 +39,7 @@ from sneeifstyles import mpl_style
 mpl_style()
 ```
 
-## What chart types can use QB Styles?
+## What chart types can use SNEE IF Styles?
 
 - Line plots
 - Scatter plots
@@ -73,7 +73,7 @@ def plot(dark):
 plot()
 ```
 
-![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/plot_light.png)
+![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/sample_plots.png)
 
 ```
 
