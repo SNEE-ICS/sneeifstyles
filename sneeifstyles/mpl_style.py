@@ -30,8 +30,6 @@ from os.path import join, dirname, realpath
 
 STYLE_DIR = realpath(join(dirname(__file__), "styles"))
 COMMON_STYLE = "qb-common.mplstyle"
-LIGHT_STYLE = "qb-light.mplstyle"
-
 
 __all__ = ["mpl_style"]
 
