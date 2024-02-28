@@ -30,14 +30,8 @@ from sneeifstyles import mpl_style
 mpl_style()
 ```
 
-### How do I use SNEE IF Styles in Jupyter Notebooks?
+> ⚠️ For Jupyter Notebooks--> Please make sure you run `from sneeifstyles import mpl_style` and `mpl_style()` in **code cells** as shown above. 
 
-> ⚠️ Please make sure you run `from sneeifstyles import mpl_style` and `mpl_style()` in **code cells** as shown below. 
-
-```python
-from sneeifstyles import mpl_style
-mpl_style()
-```
 
 ## What chart types can use SNEE IF Styles?
 
@@ -59,8 +53,8 @@ To run the examples in [`example.ipynb`](https://github.com/quantumblacklabs/sne
 import matplotlib.pyplot as plt
 from sneeifstyles import mpl_style
 
-def plot(dark):
-    mpl_style(dark)
+def plot():
+    mpl_style()
     fig, axes = plt.subplots(2, 2, figsize=(15, 10))
     
     # the following functions are defined in example.ipynb 
@@ -75,10 +69,11 @@ plot()
 
 ![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/sample_plots.png)
 
-```
 
 All of `matplotlibrc`'s options can be found [here](https://matplotlib.org/tutorials/introductory/customizing.html#a-sample-matplotlibrc-file).
 
 ## What license do you use?
 
 QB Styles is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+
+```

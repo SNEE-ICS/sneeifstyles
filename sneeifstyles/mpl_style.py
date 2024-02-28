@@ -13,7 +13,7 @@
 # permission is obtained from QuantumBlack Visual Analytics Ltd.
 
 """
-This module contains the ``mpl_style`` function which applies the QB ``matplotlib`` theme
+This module contains the ``mpl_style`` function which applies the  ``matplotlib`` theme
 
 Some of the tick properties cannot be set using ``plt.style.use``,
 so we have to set them in code.
@@ -29,7 +29,7 @@ import matplotlib.axes
 from os.path import join, dirname, realpath
 
 STYLE_DIR = realpath(join(dirname(__file__), "styles"))
-COMMON_STYLE = "qb-common.mplstyle"
+COMMON_STYLE = "snee.mplstyle"
 
 __all__ = ["mpl_style"]
 
