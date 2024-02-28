@@ -40,7 +40,7 @@ setup(
     long_description_content_type='text/markdown',
     url="https://github.com/SNEE-ICS/sneeifstyles",
     author="SNEE ICS",
-    author_email="opensource@quantumblack.com",
+    author_email="andrew.jarman@suffolk.gov.uk",
     python_requires=">=3.5",
     packages=find_packages(),
     include_package_data=True,
