@@ -69,11 +69,8 @@ plot()
 
 ![png](https://github.com/SNEE-ICS/sneeifstyles/blob/master/examples/sample_plots.png)
 
-
 All of `matplotlibrc`'s options can be found [here](https://matplotlib.org/tutorials/introductory/customizing.html#a-sample-matplotlibrc-file).
 
 ## What license do you use?
 
 QB Styles is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
-
-```
