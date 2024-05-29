@@ -1,2 +1,2 @@
-matplotlib>=3.83
-seaborn>=0.13.2
+matplotlib
+seaborn
