@@ -94,7 +94,7 @@ legend.loc             : lower center
 legend.fancybox        : True   # if True, use a rounded box for the legend, else a rectangle                              
 legend.fontsize        : 9
 legend.shadow          : False
-legend.frameon         : True   # whether or not to draw a frame around legend
+legend.frameon         : False   # whether or not to draw a frame around legend
 legend.framealpha      : 0.5    # opacity of of legend frame
 #legend.isaxes         : True
 #legend.numpoints      : 2      # the number of points in the legend line
